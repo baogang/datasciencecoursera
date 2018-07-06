@@ -1,4 +1,4 @@
-complete <- function(directory, id){
+complete <- function(directory, id = 1:332){
   workpath<-str_c(getwd(), '/', directory, '/')
   filenames <- str_pad(id, 3 , 'left', '0')
   filepaths <- str_c(workpath, filenames, '.csv')
